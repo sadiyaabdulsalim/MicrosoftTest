@@ -1,0 +1,66 @@
+{
+  "id": "24b4d156-dd32-4ee8-8db9-1f2965fe5808",
+  "version": "2.0",
+  "name": "Microsofr_Test",
+  "url": "https://sci-hub.se/",
+  "tests": [{
+    "id": "481419c7-e3c7-4f7e-b5cb-5dd1ec8c8486",
+    "name": "Test_Sci_hub",
+    "commands": [{
+      "id": "bcd5187e-8627-4ea2-a6b5-a75cdc77f9dc",
+      "comment": "",
+      "command": "open",
+      "target": "https://sci-hub.se/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffbb61ed-6457-4008-b723-d19d37bacada",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9eddf9e0-89b4-40b2-9166-d16f2c7a5c1c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.it > .paper:nth-child(1) .title",
+      "targets": [
+        ["css=.it > .paper:nth-child(1) .title", "css:finder"],
+        ["xpath=//div[@id='news']/div[2]/div/a/span[2]", "xpath:idRelative"],
+        ["xpath=//a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee6f03a7-c4f3-4094-be4a-8a42558062eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick=\"location.href='//moscow.sci-hub.se/573/1d0547b8dc1f47e483f8d8a3542a5d17/irons1989.pdf?download=true'\"]", "xpath:attributes"],
+        ["xpath=//div[@id='buttons']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'↓ save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5827039b-b270-44f7-828a-4359f430ee34",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "afc9d0e8-1335-4d4e-9646-2c7c1417ad61",
+    "name": "suite_1",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.pdfdrive.com/", "https://sci-hub.se/"],
+  "plugins": []
+}
